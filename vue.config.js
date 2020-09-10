@@ -14,6 +14,9 @@ module.exports = {
         options = options || {};
         options.inline = "no-fallback";
         return options;
-      });
+      })
+      .end()
+      .use("babel-loader")
+      .loader("babel-loader");
   }
 };
